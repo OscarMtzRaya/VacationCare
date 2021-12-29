@@ -59,7 +59,7 @@ session_start();
         <div class="main-menu-inner">
             <!-- LOGO -->
             <div class="topbar-left">
-                <a href="/admin/index.html" class="logo">
+                <a href="/admin" class="logo">
                     <span>
                         <!-- <img src="/admin/assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark"> -->
                         <img src="/assets/images/logo.png" alt="logo-large" class="img-fluid p-2">
@@ -79,29 +79,29 @@ session_start();
                             <a class="nav-link active" href="/admin/">Analytics</a>
                         </li>
                         <!--end nav-item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="crypto-index.html">Crypto</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="crypto-/admin">Crypto</a>
+                        </li> -->
                         <!--end nav-item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="crm-index.html">CRM</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="crm-/admin">CRM</a>
+                        </li> -->
                         <!--end nav-item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects-index.html">Project</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="projects-/admin">Project</a>
+                        </li> -->
                         <!--end nav-item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="ecommerce-index.html">Ecommerce</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="ecommerce-/admin">Ecommerce</a>
+                        </li> -->
                         <!--end nav-item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="helpdesk-index.html">Helpdesk</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="helpdesk-/admin">Helpdesk</a>
+                        </li> -->
                         <!--end nav-item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="hospital-index.html">Hospital</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="hospital-/admin">Hospital</a>
+                        </li> -->
                         <!--end nav-item-->
                     </ul>
                     <!--end nav-->
