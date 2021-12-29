@@ -204,14 +204,20 @@ if (isset($_SESSION['user'])) {
 		<!-- App js -->
 		<script src="assets/js/app.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script>
 			$("#loginForm").submit(function (e) { 
 				e.preventDefault();
 				const info = $(this).serialize();
-				
 				$.post("/admin/controllers/login.php", info,
 					function (data, textStatus, jqXHR) {
-						console.log(data);
+						const response = JSON.parse(data);
+						if (response.type == "error") {
+							Swal.fire("Error", response.message, response.type);
+						} else if (response.type == "success") {
+							//Swal.fire("Correcto", response.message, response.type);
+							window.location.replace("/admin");
+						}
 					},
 				);
 			});

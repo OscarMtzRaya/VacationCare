@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <body id="body" class="">
     <!-- leftbar-tab-menu -->
     <div class="leftbar-tab-menu">
@@ -48,7 +51,6 @@
             <!--end main-icon-menu-body-->
             <div class="pro-metrica-end">
                 <a href="" class="profile">
-                    <img src="/admin/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle thumb-sm">
                 </a>
             </div>
             <!--end pro-metrica-end-->
@@ -74,7 +76,7 @@
                     </div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/admin/index.html">Analytics</a>
+                            <a class="nav-link active" href="/admin/">Analytics</a>
                         </li>
                         <!--end nav-item-->
                         <li class="nav-item">
@@ -1000,7 +1002,6 @@
                                 <small class="float-end text-muted ps-2">10 min ago</small>
                                 <div class="media">
                                     <div class="avatar-md bg-soft-primary">
-                                        <img src="/admin/assets/images/users/user-4.jpg" alt="" class="thumb-sm rounded-circle">
                                     </div>
                                     <div class="media-body align-self-center ms-2 text-truncate">
                                         <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
@@ -1166,10 +1167,9 @@
                 <li class="dropdown">
                     <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                         <div class="d-flex align-items-center">
-                            <img src="/admin/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
                             <div>
-                                <small class="d-none d-md-block font-11">Admin</small>
-                                <span class="d-none d-md-block fw-semibold font-12">Maria Gibson <i class="mdi mdi-chevron-down"></i></span>
+                                <small class="d-none d-md-block font-11"><?php echo $_SESSION['user']['rol'] ?></small>
+                                <span class="d-none d-md-block fw-semibold font-12"><?php echo $_SESSION['user']['nombre'] ?>&nbsp;<?php echo $_SESSION['user']['apellido'] ?><i class="mdi mdi-chevron-down"></i></span>
                             </div>
                         </div>
                     </a>
@@ -1177,7 +1177,7 @@
                         <a class="dropdown-item" href="#"><i class="ti ti-user font-16 me-1 align-text-bottom"></i> Profile</a>
                         <a class="dropdown-item" href="#"><i class="ti ti-settings font-16 me-1 align-text-bottom"></i> Settings</a>
                         <div class="dropdown-divider mb-0"></div>
-                        <a class="dropdown-item" href="#"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
+                        <a class="dropdown-item" href="/admin/controllers/logout.php"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
                     </div>
                 </li>
                 <!--end topbar-profile-->
