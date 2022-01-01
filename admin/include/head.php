@@ -25,5 +25,5 @@
          <link href="/admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
          <link href="/admin/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
          <link href="/admin/assets/css/app.min.css" rel="stylesheet" type="text/css" />
-
+         <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
     </head>
